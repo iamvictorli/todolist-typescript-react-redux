@@ -3,7 +3,7 @@ import * as React from 'react';
 import List from './List';
 import Input from './Input';
 
-import { ITodoAppState as ITodoApp } from '../redux/reducers/TodoAppReducer';
+import { ITodoAppState as ITodoApp } from '../redux/reducer/TodoAppReducer';
 interface IToDoAppProps {
   toDoApp: ITodoApp;
   inputChange: (value: string) => void;

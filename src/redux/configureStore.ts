@@ -1,6 +1,6 @@
 import { createStore, combineReducers } from 'redux';
 
-import TodoAppReducer from './reducers/TodoAppReducer';
+import TodoAppReducer from './reducer/TodoAppReducer';
 
 export default (initialState = {}) => {
   // combine reducers if needed

@@ -1,4 +1,4 @@
-import { ITodoAppState } from './reducers/TodoAppReducer';
+import { ITodoAppState } from './reducer/TodoAppReducer';
 
 // defining redux store state
 export interface IStoreState {

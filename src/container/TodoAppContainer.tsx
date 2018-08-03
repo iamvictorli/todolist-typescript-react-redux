@@ -6,7 +6,7 @@ import {
   inputSubmit,
   deleteItem,
   listItemClick
-} from '../redux/reducers/TodoAppReducer';
+} from '../redux/reducer/TodoAppReducer';
 
 import TodoApp from '../component/TodoApp';
 import { IStoreState } from '../redux/storeState';
