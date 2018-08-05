@@ -21,10 +21,10 @@ const mapStateToProps = (state: IStoreState) => {
 const mapDispatchToProps = (dispatch: Dispatch) =>
   bindActionCreators(
     {
-      deleteItem,
-      inputChange,
-      inputSubmit,
-      listItemClick
+      deleteItemAction: deleteItem,
+      inputChangeAction: inputChange,
+      inputSubmitAction: inputSubmit,
+      listItemClickAction: listItemClick
     },
     dispatch
   );

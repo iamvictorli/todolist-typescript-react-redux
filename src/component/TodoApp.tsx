@@ -6,34 +6,34 @@ import Input from './Input';
 import { ITodoAppState as ITodoApp } from '../redux/reducer/TodoAppReducer';
 interface IToDoAppProps {
   toDoApp: ITodoApp;
-  inputChange: (value: string) => void;
-  inputSubmit: () => void;
-  listItemClick: (index: number) => void;
-  deleteItem: (index: number) => void;
+  inputChangeAction: (value: string) => void;
+  inputSubmitAction: () => void;
+  listItemClickAction: (index: number) => void;
+  deleteItemAction: (index: number) => void;
 }
 
 const ToDoApp: React.SFC<IToDoAppProps> = ({
   toDoApp,
-  inputChange,
-  inputSubmit,
-  listItemClick,
-  deleteItem
+  inputChangeAction,
+  inputSubmitAction,
+  listItemClickAction,
+  deleteItemAction
 }) => {
   const onInputChange = (event: React.FormEvent<HTMLInputElement>) => {
-    inputChange(event.currentTarget.value);
+    inputChangeAction(event.currentTarget.value);
   };
 
   const onSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    inputSubmit();
+    inputSubmitAction();
   };
 
   const onListItemClick = (i: number) => {
-    listItemClick(i);
+    listItemClickAction(i);
   };
 
   const deleteListItem = (i: number) => {
-    deleteItem(i);
+    deleteItemAction(i);
   };
 
   return (
