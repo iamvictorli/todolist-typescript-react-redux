@@ -63,7 +63,7 @@ export interface ITodoAppState {
 export default function reducer(
   state: ITodoAppState = initialState,
   action: Actions
-) {
+): ITodoAppState {
   switch (action.type) {
     case Constants.INPUT_SUBMIT:
       return {
