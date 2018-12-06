@@ -1,4 +1,4 @@
-# Todolist Typescript Redux
+# Todolist Typescript React Redux
 
 An example of Typescript React Redux.
 
